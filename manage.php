@@ -7,6 +7,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Table with database</title>
     <style>
+    body{
+        background : url(BG.jpg);
+        background-size: cover;
+    }
         table {
             border-collapse: collapse;
             width: 100%;
@@ -78,7 +82,9 @@
                         echo "<input type='submit'class='dropdown-item' name='W_$num_rows' value='กำลังซ่อม'>";
         ?>
                     </div>
-                    <button class="btn btn-danger " type="button">X</button>  
+        <?php
+                    echo "<input class='btn btn-danger' type='submit' name='D_$num_rows' value='X' onclick='return Confirm_del()'> ";  
+        ?>
                 </div>
                 </form>
                 </td></tr>
@@ -90,6 +96,12 @@
                 //$conn->close();
         ?>
     </table>
+
+    <script>
+        function Confirm_del() {
+            return confirm("ยืนยันการลบรายการ");
+        }
+    </script>
         <?php
             if(mysqli_num_rows($result) > 0){
                 echo "<span style='font-size:25px;margin-top:2rem;margin-left:2rem;display:block;font-family: monospace;'><b>".mysqli_num_rows($result)." : results</b></span>";
@@ -133,6 +145,15 @@
                     $update_status = "UPDATE manage SET Status = 'W' WHERE  ProductID = '$product_id[$i]'";
                     $update_status = mysqli_query($connect,$update_status);
                     ?>      
+                <script>
+                    document.location.href="manage.php";
+                </script>
+        <?php
+                }
+                else if(isset($_POST['D_'.$i])){
+                    $del_status = "DELETE FROM manage WHERE ProductID = '$product_id[$i]'";
+                    $del_status = mysqli_query($connect,$del_status);
+        ?>      
                 <script>
                     document.location.href="manage.php";
                 </script>
