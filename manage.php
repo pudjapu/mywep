@@ -13,7 +13,9 @@
     }
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 80%;
+            margin-top:2rem;
+            margin-left:auto;margin-right:auto;
             color: #588c7e;
             font-family: monospace;
             font-size: 25px;
@@ -34,6 +36,7 @@
 <body>
         
     <table>
+        <div style="text-align:center;font-size:40px;font-family: monospace;font-weight:bold;margin-top:1rem;">รายการเคลมสินค้า</div>
         <tr>
             <th>Id</th>
             <th>Name</th>
@@ -104,10 +107,10 @@
     </script>
         <?php
             if(mysqli_num_rows($result) > 0){
-                echo "<span style='font-size:25px;margin-top:2rem;margin-left:2rem;display:block;font-family: monospace;'><b>".mysqli_num_rows($result)." : results</b></span>";
+                echo "<div style='font-size:25px;margin-top:2rem;margin-left:2rem;display:block;font-family: monospace;text-align:center;'><b>".mysqli_num_rows($result)." : results</b></div>";
             }
             else { 
-                echo "<span style='font-size:25px;margin-top:2rem;margin-left:2rem;display:block;font-family: monospace;b>0 : results</b></span>"; 
+                echo "<div style='font-size:25px;margin-top:2rem;margin-left:2rem;display:block;font-family: monospace;text-align:center;><b>0 : results</b></div>"; 
             }
         ?>
 
