@@ -1,6 +1,12 @@
 <html>
 <head>
 <title>login</title>
+<style>
+   body{
+      background-image: url(/picture/BG.jpg);
+      background-size: cover;
+   }
+</style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
 <body>
 <form name="form1" method="post" action="login.php">
