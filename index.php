@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="allpaint.css">
 <style>
    body{
-        background-image: url(/picture/BG.JPG);
+        background-image: url(BG.JPG);
         background-size: cover;
    }
 </style>
@@ -32,7 +32,7 @@
   <br>
   <div style="padding: 5rem;">
     <input class =" hoverlink" type="submit" name="Submit" value="Save" style="position: relative; position: absolute; left: 40%;  padding: 0.5rem;">
-    <input class =" hoverlink" type="submit" name="register" value="Register"  style="position: relative; position: absolute; left: 48% ; padding: 0.5rem; "onclick='location.replace("register.php")'>
+    <input class =" hoverlink" type="submit" name="register" value="Register"  style="position: relative; position: absolute; left: 48% ; padding: 0.5rem; " onclick='location.replace("register.php")'>
   </div>
   
     
