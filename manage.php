@@ -5,10 +5,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="test.css">
     <title>Table with database</title>
     <style>
     body{
-        background : url(BG.jpg);
+        background : url(BG1.jpg);
         background-size: cover;
     }
         table {
@@ -36,7 +37,7 @@
 <body>
         
     <table>
-        <div style="text-align:center;font-size:40px;font-family: monospace;font-weight:bold;margin-top:1rem;">รายการเคลมสินค้า</div>
+        <div style="color : red;text-align:center;font-size:40px;font-family: monospace;font-weight:bold;margin-top:1rem;">รายการเคลมสินค้า</div>
         <tr>
             <th>Id</th>
             <th>Name</th>
@@ -107,10 +108,10 @@
     </script>
         <?php
             if(mysqli_num_rows($result) > 0){
-                echo "<div style='font-size:25px;margin-top:2rem;margin-left:2rem;display:block;font-family: monospace;text-align:center;'><b>".mysqli_num_rows($result)." : results</b></div>";
+                echo "<div style=' color : red;font-size:25px;margin-top:2rem;margin-left:2rem;display:block;font-family: monospace;text-align:center;'><b>".mysqli_num_rows($result)." : results</b></div>";
             }
             else { 
-                echo "<div style='font-size:25px;margin-top:2rem;margin-left:2rem;display:block;font-family: monospace;text-align:center;><b>0 : results</b></div>"; 
+                echo "<div style='color : red;font-size:25px;margin-top:2rem;margin-left:2rem;display:block;font-family: monospace;text-align:center;'><b>0 : results</b></div>"; 
             }
         ?>
 
@@ -165,7 +166,10 @@
                 
             }
         ?>
-              
+        <div  class="login" >
+        <input type="button" value="LOGOUT" onclick='location.replace("index.php")'>  
+        </div>
+           
 </body>
 
 </html>

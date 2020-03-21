@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="allpaint.css">
 <style>
   body{
-       background-image: url(BG.JPG);
+       background-image: url(BG1.JPG);
        background-size: cover;
   }
 </style>

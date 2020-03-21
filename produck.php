@@ -1,5 +1,22 @@
 
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+    body{
+        background : url(BG1.jpg);
+        background-size: cover;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class = "login" style="margin-top:-7rem;font-size:40px ;width:500px ;left:37%;">
+    <?php
     require('connect.php');
     session_start();
     
@@ -51,3 +68,10 @@
 
     mysqli_close();
 ?>
+    </div>
+    <div  class="login" >
+        <input type="button" value="LOGOUT" onclick='location.replace("index.php")'>  
+        </div>
+</body>
+</html>
+
