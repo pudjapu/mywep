@@ -13,6 +13,9 @@
   <div style="   margin-top: 15rem;" >
     <input class =" hoverlink" type="submit" name="Submit" value="Register Product" style=" color: brown; font-size: 40px;font-weight: bold;position: relative; left: 25%;" onclick='location.replace("registerproduck.php")'>
   <input class =" hoverlink" type="submit" name="Submit_2" value="Show Product" style="color: brown;font-size: 40px ;font-weight: bold;position: relative; position: absolute; left: 52%; " onclick='location.replace("showproduct.php")'>
+  <div style="   margin-top: 10rem;">
+  <input class ="hoverlink" type="button" name="Submit" onclick='location.replace("index.php")' value="Back" style=" color : white;background-color :black;position: relative; position: absolute; left: 46%  ;  padding: 1.5rem; ">
+  </div>
   </div>
   
 </form>

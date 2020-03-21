@@ -29,6 +29,12 @@ mysqli_close();
 
 <html>
 <head>
+<style>
+    body{
+        background: url(BG.jpg);
+        background-size :cover;
+    }
+</style>
 <title>Show</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
 <body>
