@@ -23,12 +23,12 @@
       <tr>
         <td width="125" style="color: #0066cc; font-weight:bold; font-size: 30px;"> &nbsp;ProductID</td>
         <td width="180"style="width: 2rem; font-size: 20px;">
-          <input name="ProductName" type="text" id="ProductName" size="20">
+          <input name="ProductID" type="text" id="ProductID" size="20">
         </td>
       </tr>
       <tr>
         <td style="color: #0066cc; font-weight:bold; font-size: 30px;"> &nbsp;อาการเสีย</td>
-        <td><textarea type='textarea' class='form-control' id='report_in' name='report' style='font-size:20px;background-color:rgba(240,240,240,1.0);width:20rem; height:6rem' ></textarea>
+        <td><textarea type='textarea' class='form-control' id='ProductName' name='ProductName' style='font-size:20px;background-color:rgba(240,240,240,1.0);width:20rem; height:6rem' ></textarea>
         </td>
       </tr>
     </tbody>

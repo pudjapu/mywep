@@ -59,7 +59,7 @@
         
         $FN = $OR['FName'];
 
-		$SQL = "INSERT INTO `manage` (`ID`, `FName`, `LName`, `ProductName`, `ProductID`, `Status`) VALUES ('".$uid."', '".$FN."', '".$LN."', '".$_POST["ProductName"]."', '".$_POST["ProductID"]."', 'W')";
+		$SQL = "INSERT INTO `manage` (`ID`, `FName`, `LName`, `Problem`, `ProductID`, `Status`) VALUES ('".$uid."', '".$FN."', '".$LN."', '".$_POST["ProductName"]."', '".$_POST["ProductID"]."', 'W')";
 		$objQuery = mysqli_query($connect,$SQL);
 		
 		echo "Register Completed!<br>";		

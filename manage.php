@@ -42,22 +42,22 @@
             <th>Id</th>
             <th>Name</th>
             <th>Surname</th>
-            <th>Product Name</th>
             <th>Product ID</th>
+            <th>Problem</th>
             <th>Status</th>
         </tr>
 
         <?php
                 require('connect.php');
                 $num_rows = 1;
-                $sql = "SELECT ID, FName, LName, ProductName, ProductID, Status FROM manage";
+                $sql = "SELECT ID, FName, LName, Problem, ProductID, Status FROM manage";
                 $result = mysqli_query($connect,$sql);
                 if (mysqli_num_rows($result) > 0) {
                 // output data of each row
                     while($row = $result->fetch_assoc()) {
                     $product_id["$num_rows"] = $row["ProductID"];    
                     echo "<tr><td>" . $row["ID"]. "</td><td>" . $row["FName"] . "</td><td>"
-                    . $row["LName"]. "</td><td>" . $row["ProductName"]. "</td><td>" . $row["ProductID"]. "</td>";
+                    . $row["LName"]. "</td><td>" . $row["ProductID"]. "</td><td>" . $row["Problem"]. "</td>";
         ?>            
                 <td>
                 <form action ="" method="POST">
