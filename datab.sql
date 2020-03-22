@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 17, 2020 at 10:43 AM
+-- Generation Time: Mar 22, 2020 at 03:11 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -41,12 +41,16 @@ CREATE TABLE `account` (
 
 INSERT INTO `account` (`ID`, `Password`, `FName`, `LName`) VALUES
 ('admin', '159753', 'X', 'X'),
+('ANNA', '12345678', 'asdasd', 'asdasd'),
 ('eiei', 'eiei', 'eiei', 'eiei'),
 ('me', '123456', 'me', 'me'),
 ('mini', '123', 'wow', 'eiei'),
+('NUTNUTNUT', '12345678', 'mon', 'tri'),
 ('pudjapu', '123', 'p', 'w'),
 ('sosad', '123', 'PP', 'TT'),
-('w33', 'w33', 'w33', 'w33');
+('studentzaa', '12345678', 'Worapong', 'Panupintu'),
+('w33', 'w33', 'w33', 'w33'),
+('WORAPONG', 'PANUPINTU', 'MON', 'TRI');
 
 -- --------------------------------------------------------
 
@@ -58,7 +62,7 @@ CREATE TABLE `manage` (
   `ID` varchar(20) NOT NULL,
   `FName` varchar(25) NOT NULL,
   `LName` varchar(25) NOT NULL,
-  `ProductName` varchar(30) NOT NULL,
+  `Problem` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `ProductID` varchar(30) NOT NULL,
   `Status` varchar(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -67,11 +71,11 @@ CREATE TABLE `manage` (
 -- Dumping data for table `manage`
 --
 
-INSERT INTO `manage` (`ID`, `FName`, `LName`, `ProductName`, `ProductID`, `Status`) VALUES
-('eiei', 'eiei', 'eiei', 'TY', '123', 'W'),
-('mini', 'wow', 'eiei', 'TV', '459874562', 'W'),
-('mini', 'wow', 'eiei', 'TV', 'mama', 'W'),
-('eiei', 'eiei', 'eiei', 'RPG', 'RPG', 'W');
+INSERT INTO `manage` (`ID`, `FName`, `LName`, `Problem`, `ProductID`, `Status`) VALUES
+('NUTNUTNUT', 'mon', 'tri', '000000', '0123456123', 'W'),
+('studentzaa', 'Worapong', 'Panupintu', 'MSI-GL63-8RD', 'ZXCV-KK01', 'P'),
+('studentzaa', 'Worapong', 'Panupintu', 'MSI-GT75-8RG', 'ZXCV-KK02', 'T'),
+('studentzaa', 'Worapong', 'Panupintu', 'MSI-GS65-8RE', 'ZXCV-KK03', 'W');
 
 -- --------------------------------------------------------
 
