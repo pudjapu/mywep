@@ -21,22 +21,25 @@
     </div>
     <tbody style=" position: relative; position: absolute;  left: 37%;">
       <tr>
-        <td width="125" style="color: #0066cc; font-weight:bold; font-size: 30px;"> &nbsp;ProductName</td>
+        <td width="125" style="color: #0066cc; font-weight:bold; font-size: 30px;"> &nbsp;ProductID</td>
         <td width="180"style="width: 2rem; font-size: 20px;">
           <input name="ProductName" type="text" id="ProductName" size="20">
         </td>
       </tr>
       <tr>
-        <td style="color: #0066cc; font-weight:bold; font-size: 30px;"> &nbsp;ProductID</td>
-        <td><input name="ProductID" type="text" id="ProductID">
+        <td style="color: #0066cc; font-weight:bold; font-size: 30px;"> &nbsp;อาการเสีย</td>
+        <td><textarea type='textarea' class='form-control' id='report_in' name='report' style='font-size:20px;background-color:rgba(240,240,240,1.0);width:20rem; height:6rem' ></textarea>
         </td>
       </tr>
     </tbody>
   </table>
   <br>
-  <div  class="login" style="margin-left:-3rem" >
+  <div  class="login" style="left:46% ;position : absolute ;position: relative; margin-top: 10%" >
         <input type="submit" value="SAVE" >
-        <input type="button" name="Submit" onclick='location.replace("link.php")' value="Back" >  
+        
+        <input type="button" name="Submit" onclick='location.replace("link.php")' value="Back" > 
+        
+         
   </div>
   <!--<div style="padding: 5rem;">
     <input class ="hoverlink" type="submit" name="Submit" value="Save" style="position: relative; position: absolute; left: 53%;  padding: 1rem; color : white; background-color : black">

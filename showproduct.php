@@ -30,7 +30,7 @@ session_start();
     
     if($result){
         while($record = mysqli_fetch_array($result,MYSQLI_ASSOC)){
-            echo "Product Name : ".$record['ProductName']."      ";
+            echo "Product ID : ".$record['ProductID']."      ";
             echo "<br>";
     
             $sql_2 = "SELECT * FROM status WHERE Status = '".$record['Status']."'";
