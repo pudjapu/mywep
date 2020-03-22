@@ -19,8 +19,10 @@ session_start();
     </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
 <body>
-    
-<div class = "login" style="font-size : 40px ; left:37%; width:500px ; margin-top:-8rem;">
+<div class="header" style="margin-top:-20rem ;margin-left:5rem">
+			<div style="font-size :40px; font-weight: bold;">SHOW <span>PRODUCT </span></div>
+		</div>
+<div class = "login" style="font-size : 20px ; left:39%; width:500px ; margin-top:-8rem;">
     <?php
     $sql = "SELECT * FROM manage WHERE ID = '".$_SESSION['ID']."'";
 
@@ -44,10 +46,11 @@ session_start();
     
     mysqli_close();
     ?>
-</div>
-<div class="login" >
+<div class="login" style="left:15%;  margin-top:20rem" >
 <input type="submit" name="back" value="go back" onclick='location.replace("link.php")'>
 </div>
+</div>
+
 
 </body>
 </html>

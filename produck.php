@@ -52,6 +52,9 @@
     $objResult = mysqli_fetch_array($objQuery,MYSQLI_ASSOC);
     if($objResult){
         echo "ProductID already exists!";
+        echo "<br>";
+        echo "<br><a href='registerproduck.php'>Back to CLAIM PRODUCT</a>";
+		exit();
     } else {
         
         $FN = $OR['FName'];
@@ -61,7 +64,7 @@
 		
 		echo "Register Completed!<br>";		
 	
-		echo "<br> Go to <a href='registerproduck.php'>Login page</a>";
+		
 
     
     }
@@ -69,9 +72,10 @@
     mysqli_close();
 ?>
     </div>
-    <div  class="login" >
-        <input type="button" value="LOGOUT" onclick='location.replace("index.php")'>  
-        </div>
+    <div  class="login" style="margin-left : -6rem" >
+        <input type="button" value="BACK TO MENU " onclick='location.replace("link.php")'>
+        <input type="button" value="BACK TO CLAIM " onclick='location.replace("registerproduck.php")'>  
+    </div>
 </body>
 </html>
 
