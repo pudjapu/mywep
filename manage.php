@@ -1,3 +1,35 @@
+<?php
+
+    session_start();
+
+  if(isset($_SESSION['ID']) == false){
+?>
+    <script>
+        document.location.href = "index.php";
+    </script>
+<?php
+  }
+  if($_SESSION['ID'] != 'admin'){
+?>
+    <script>
+        document.location.href = "index.php";
+    </script>
+<?php
+
+  }
+  if(isset($_POST['logout'])){
+
+    unset($_SESSION['ID']);
+?>
+    <script>
+        document.location.href = "index.php";
+    </script>
+<?php    
+  }
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,8 +75,7 @@
             <th>Name</th>
             <th>Surname</th>
             <th>Product ID</th>
-            <th>Problem
-            </th>
+            <th>Problem</th>
             <th>Status</th>
         </tr>
 
@@ -167,9 +198,13 @@
                 
             }
         ?>
-        <div  class="login" >
-        <input type="button" value="LOGOUT" onclick='location.replace("index.php")'>  
-        </div>
+    
+        
+            <div style="text-align:center;font-size:2rem;">
+                <form action="" method="POST">
+                    <input type="submit" name="logout" value="LOGOUT">  
+                </form>
+            </div>
            
 </body>
 
