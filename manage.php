@@ -43,7 +43,8 @@
             <th>Name</th>
             <th>Surname</th>
             <th>Product ID</th>
-            <th>Problem</th>
+            <th>Problem
+            </th>
             <th>Status</th>
         </tr>
 
